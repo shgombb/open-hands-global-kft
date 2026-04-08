@@ -7,6 +7,8 @@ export default function Footer() {
         </span>
         <a
           href="https://work.openhandsglobal.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-[10px] text-gray-700 transition-colors hover:text-gray-400"
         >
           workforce & recruitment →

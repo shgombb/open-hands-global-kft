@@ -25,7 +25,7 @@ export default function Hero() {
             ↓ See Our Work
           </a>
         </div>
-        <div className="mt-12 flex h-48 items-center justify-center rounded border border-dashed border-dark-border bg-dark-subtle md:h-64">
+        <div aria-hidden="true" className="mt-12 flex h-48 items-center justify-center rounded border border-dashed border-dark-border bg-dark-subtle md:h-64">
           <span className="text-xs tracking-widest text-gray-700">
             [ HERO BANNER IMAGE ]
           </span>

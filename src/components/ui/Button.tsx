@@ -14,7 +14,7 @@ export default function Button({ children, variant = 'primary', href, onClick }:
 
   if (href) {
     return (
-      <a href={href} className={`${base} ${styles[variant]}`}>
+      <a href={href} onClick={onClick} className={`${base} ${styles[variant]}`}>
         {children}
       </a>
     )
