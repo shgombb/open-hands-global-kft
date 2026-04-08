@@ -6,7 +6,7 @@ export default function Footer() {
           © {new Date().getFullYear()} Open Hands Global Kft.
         </span>
         <a
-          href="https://work.openhandsglobal.com"
+          href="https://staffing.openhands.hu"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[10px] text-gray-700 transition-colors hover:text-gray-400"
