@@ -1,0 +1,4 @@
+{"type":"server-started","port":59343,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:59343","screen_dir":"/Users/aronszantner/progprojects/websites/open-hands-global-kft/.superpowers/brainstorm/74132-1775668931/content","state_dir":"/Users/aronszantner/progprojects/websites/open-hands-global-kft/.superpowers/brainstorm/74132-1775668931/state"}
+{"type":"screen-added","file":"/Users/aronszantner/progprojects/websites/open-hands-global-kft/.superpowers/brainstorm/74132-1775668931/content/layout-structure.html"}
+{"type":"screen-added","file":"/Users/aronszantner/progprojects/websites/open-hands-global-kft/.superpowers/brainstorm/74132-1775668931/content/waiting-1.html"}
+{"type":"server-stopped","reason":"idle timeout"}
