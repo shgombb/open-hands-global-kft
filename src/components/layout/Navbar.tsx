@@ -27,7 +27,18 @@ export default function Navbar() {
     )
 
     sections.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
+
+    const onScroll = () => {
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8
+      if (atBottom) setActiveId('contact')
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      observer.disconnect()
+      window.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
   return (
