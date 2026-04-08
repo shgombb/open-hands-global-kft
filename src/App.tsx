@@ -1,11 +1,12 @@
 import Navbar from './components/layout/Navbar'
+import Hero from './components/sections/Hero'
 
 export default function App() {
   return (
     <div className="min-h-screen bg-dark text-white">
       <Navbar />
       <main>
-        <div className="p-8 text-brand">Sections coming soon</div>
+        <Hero />
       </main>
     </div>
   )
