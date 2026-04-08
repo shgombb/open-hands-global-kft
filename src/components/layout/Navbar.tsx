@@ -11,34 +11,31 @@ export default function Navbar() {
   const [activeId, setActiveId] = useState<string | null>(null)
 
   useEffect(() => {
-    const sections = navLinks
-      .map(({ id }) => document.getElementById(id))
-      .filter(Boolean) as HTMLElement[]
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id)
-          }
-        }
-      },
-      { rootMargin: '-40% 0px -55% 0px', threshold: 0 },
-    )
-
-    sections.forEach((el) => observer.observe(el))
-
     const onScroll = () => {
       const atBottom =
         window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8
-      if (atBottom) setActiveId('contact')
+
+      if (atBottom) {
+        setActiveId('contact')
+        return
+      }
+
+      const midpoint = window.innerHeight * 0.45
+
+      let current: string | null = null
+      for (const { id } of navLinks) {
+        const el = document.getElementById(id)
+        if (!el) continue
+        if (el.getBoundingClientRect().top <= midpoint) {
+          current = id
+        }
+      }
+      setActiveId(current)
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      observer.disconnect()
-      window.removeEventListener('scroll', onScroll)
-    }
+    onScroll()
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
