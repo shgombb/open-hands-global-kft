@@ -12,24 +12,24 @@ export interface PortfolioItem {
 export const portfolioItems: PortfolioItem[] = [
   {
     id: 'project-1',
-    name: 'Project Name',
+    name: 'War Room - The Prayer Tracker',
+    type: 'appstore',
+    category: 'mobile',
+    image: '',
+  },
+  {
+    id: 'app-1',
+    name: 'mywhisperer.com',
     type: 'client',
     category: 'Web App',
     image: '',
   },
   {
-    id: 'app-1',
-    name: 'App Name',
-    type: 'appstore',
-    category: 'Mobile',
-    image: '',
-    url: 'https://apps.apple.com',
-  },
-  {
     id: 'project-2',
-    name: 'Project Name',
+    name: 'lumenalapitvany.hu',
     type: 'client',
-    category: 'DevOps',
+    category: 'Web App',
+    url: 'https://lumenalapitvany.hu',
     image: '',
   },
 ]

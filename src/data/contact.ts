@@ -10,8 +10,8 @@ export interface ContactLink {
 export const contactLinks: ContactLink[] = [
   {
     id: 'email',
-    label: 'global.hands.open@gmail.com',
-    href: 'mailto:global.hands.open@gmail.com',
+    label: 'info@openhands.hu',
+    href: 'mailto:info@openhands.hu',
     icon: 'email',
   },
   {
