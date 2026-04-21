@@ -11,9 +11,7 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
-              className={`rounded bg-dark-card p-5 border-l-2 ${
-                service.highlighted ? 'border-brand' : 'border-dark-border'
-              }`}
+              className="rounded bg-dark-card p-5 border-l-2 border-dark-border hover:border-brand transition-colors"
             >
               <h3 className="text-sm font-bold text-white">{service.title}</h3>
               <p className="mt-1 text-xs text-gray-500">{service.description}</p>

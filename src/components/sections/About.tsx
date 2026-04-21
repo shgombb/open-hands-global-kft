@@ -7,7 +7,7 @@ export default function About() {
         <SectionLabel>Who We Are</SectionLabel>
         <h2 className="mt-1 text-2xl font-bold text-white">About</h2>
         <div className="mt-8 flex gap-6">
-          <div aria-hidden="true" className="h-16 w-16 flex-shrink-0 rounded-full border border-dashed border-dark-border bg-dark-subtle" />
+          <img src="/openhands-global-logo.png" alt="Open Hands Global logo" className="h-16 w-16 flex-shrink-0 rounded-full object-cover" />
           <div>
             <p className="text-sm leading-relaxed text-gray-400">
               Open Hands Global is a Budapest-based software studio specialising in
